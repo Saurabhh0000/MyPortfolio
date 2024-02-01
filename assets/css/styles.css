@@ -1,0 +1,410 @@
+/* Add global styles and container class */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  
+}
+
+/* Header styles */
+header {
+  background-color: #007bff;
+  padding: 30px 0;
+  color: #fff;
+  
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  
+}
+nav a:hover{
+  
+  background-color: rgb(90, 179, 149);
+  padding: 10px;
+  border-radius: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+#hamburger-icon {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+/* Main content styles */
+main {
+  padding: 40px 0;
+}
+
+#hero,
+#skills,
+#projects {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* ... Your existing CSS styles ... */
+
+/* Updated styles for the Hero section */
+#hero-section {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #64a1e3;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333; /* Change text color */
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555; /* Change text color */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+
+
+
+/* ... Your existing CSS styles ... */
+
+/* New styles for the About section */
+section {
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #007bff;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-image {
+  flex: 1;
+  margin-right: 30px; /* Adjust spacing between image and text */
+}
+
+.about-image img {
+  width: 40%;
+  height: 60%;
+  border-radius: 10%;
+}
+
+.about-text {
+  flex: 1;
+}
+
+
+.qualification p {
+  margin-right: 30px;
+  line-height: 1.5;
+  font-weight: 590;
+  
+}
+
+.qualification a{
+  text-decoration: none;
+  background-color: #007bff;
+  padding: 10px;
+  color: #fff;
+  font-weight: 590;
+  border-radius: 50px;
+}
+.qualification a:hover{
+  background-color: rgb(90, 179, 149);
+}
+@media (max-width: 768px) { /*It specifies the styles will be applied only when the viewport width is 768 pixels or less.*/
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-image {
+    margin-left: 150px;
+    margin-bottom: 20px;
+  }
+}
+
+/* ... Your existing CSS styles ... */
+
+
+
+/* Updated styles for the Skills section */
+#skills-section {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0px;
+  text-align: center;
+}
+
+.skills-list li {
+  margin: 10px 400px 0px 200px;
+  padding: 10px 100px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50px;
+  display: block; /* Change display to block for a vertical list */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .skills-list li {
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    max-width: none;
+    margin-left: 30px;
+    padding: 10px 10px;
+  }
+}
+
+/* ... Your existing CSS styles ... */
+
+/* Updated styles for the Projects section */
+#projects-section {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+.projects-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: center; /* Center the projects in the container */
+}
+
+.project-item {
+  margin: 0px 300px 0px 100px;
+  padding: 20px 100px 10px ;
+  border-radius: 5px;
+  
+}
+
+.project-description {
+  display: none;
+  padding: 10px;
+  background-color: #77ace4;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.projects-list a {
+  display: block;
+  margin-bottom: 10px; /* Add margin between project items */
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Add hover effect */
+.project-item:hover .project-description {
+  display: block;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .project-item {
+    width: 100%;
+    margin-left: 30px;
+    padding: 0px 10px;
+    max-width: none;
+  }
+}
+
+
+
+/* ... Your existing CSS styles ... */
+
+/* Updated styles for the Contact section */
+#contact-section {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  
+}
+.form-group input{
+  border: 2px solid #64a1e3;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+}
+.button:hover{
+  
+  background-color: rgb(90, 179, 149);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  form {
+    padding: 0 20px;
+  }
+}
+
+
+/* Updated styles for the Footer section */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+/* Style for vertical social media icons */
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icon {
+  color: #007bff;
+  font-size: 24px;
+  text-decoration: none;
+ 
+  padding: 10px 0px;
+  margin: 0px 40px;
+  position: relative;
+}
+
+.social-icon:hover{
+  color: rgb(90, 179, 149);
+}
+.address {
+  flex: 1;
+  margin-top: 20px;
+}
+
+.address p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.contact {
+  flex: 1;
+  margin-top: 20px;
+}
+
+.contact h4 {
+  margin-bottom: 10px;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .social-media {
+    margin-top: 20px;
+  }
+}

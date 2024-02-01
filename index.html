@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Add this in the head section of your HTML -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/9e416adc09.js" crossorigin="anonymous"></script>
+
+
+  <script src="main.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      
+      <nav>
+        <ul id="nav-ul">
+          <li><a href="#hero-section">Home</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#projects-section">Portfolio</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+        
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>
+              Hi, I'm Saurabh Kumar, a passionate web developer with expertise in HTML, CSS, and JavaScript. 
+              I specialize in crafting responsive and user-friendly websites suitable for both desktop and mobile devices.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      
+      <section id="about-section">
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="about-content">
+            <div class="about-image">
+              <img src="assets/img/pic.png" alt="Developer Image">
+            </div>
+            <div class="about-text">
+              <p>
+                Hi, I'm a passionate web developer with expertise in HTML, CSS, and JavaScript. 
+                I enjoy crafting beautiful and intuitive websites that provide a great user experience.
+              </p>
+              <p>
+                In my role, I focus on creating responsive designs and ensuring optimal performance across various devices. 
+                I also have experience with version control systems like Git and GitHub.
+              </p>
+
+              <div class="qualification">
+                <h2>Qualifications</h2>
+                <p>10th: 72%</p>
+                <p>12th: 84%</p>
+                <p>Graduation: 7.82 CGPA</p>
+                <a href="assets\pdf\Saurabh_Resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+              </div>
+            </div>
+            </div>
+          </div>
+          
+      </section>
+      
+      <section id="skills-section">
+        <div class="container">
+          <h2>Skills</h2>
+          <ul class="skills-list">
+            <li>Web Development (HTML, CSS, JavaScript)</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>Responsive Design</li>
+            <li>User Experience (UX) Design</li>
+            <li>Version Control (Git, GitHub)</li>
+          </ul>
+        </div>
+      </section>
+      
+      <section id="projects-section">
+        <div class="container">
+          <h2>Projects</h2>
+          <ul class="projects-list">
+            <li class="project-item" data-description="Description of the Driver Hiring App project.">
+              <a href="#">Driver Hiring App</a>
+              <p class="project-description">In This project aims to Most of the people want an ease of
+                travelling using drivers or Many people own a vehicle but cannot
+                drive, hence they prefer hiring a driver for long rides.</p>
+                <p class="project-description">Used Java and Kotlin to design the application for user and for
+                  storing the data use Firebase database.
+                  </p>
+            </li>
+            <li class="project-item" data-description="Description of the Heart Disease Prediction System project.">
+              <a href="#">Heart Disease Prediction System using Machine Learning</a>
+              <p class="project-description">This project aims to predict the likelihood of heart disease using
+                machine learning algorithms, providing accurate and actionable
+                insights to assist in early diagnosis and treatment decisions.</p>
+                <p class="project-description">Used Selenium to scrap data and exploratory data analysis (EDA)
+                  to enhance the predictive capabilities of the machine learning
+                  algorithms employed in the Heart Disease Prediction.</p>
+            </li>
+            <li class="project-item" data-description="Description of the Data Scientist's Salary Insight project.">
+              <a href="#">Data Scientist's Salary Insight</a>
+              <p class="project-description">This project aims to estimate Data Scientists salaries to help
+                rookie Data Scientists negotiate their income with correct sats
+                when they are looking for a job.</p>
+                <p class="project-description">Used Selenium to scrap data from Glassdoor.com and performed
+                  data cleaning and EDA to analyses the data.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+          
+      
+          <section id="contact-section">
+            <div class="container">
+              <h2>Contact</h2>
+              <form id="contact-form">
+                <div class="form-group">
+                  <label for="person-name">Name:</label>
+                  <input type="text" id="person-name" name="person-name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-number">Contact:</label>
+                  <input type="tel" id="contact-number" name="contact-number" required>
+                </div>
+                <div class="form-group">
+                  <label for="query">Query:</label>
+                  <textarea id="query" name="query" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="button">Submit</button>
+              </form>
+            </div>
+          </section>
+          
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="social-media">
+          <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="address">
+          <h4>Address</h4>
+          <p>Chandigarh University Gharuan,<br>Mohali, Punjab - 140413</p>
+
+          <h4>Contact Us</h4>
+          <p>Email: saurabhkeshri074@gmail.com<br>Phone: +91 6203298231</p>
+        </div>
+        <div class="contact">
+          <h4>Recent Projects</h4>
+          <p>PG Life<br>E-Commerce<br>Hospital Management System</p>
+        </div>
+        
+        
+      </div>
+      <p class="copyright">Copyright © 2024 My Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>
